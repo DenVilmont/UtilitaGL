@@ -311,6 +311,7 @@ public class VentanaLog {
                     || logDataArray[1].contains(cadena)
                     || decodedXML.contains(cadena)){
                 datosEncontrados.add(logDataArray);
+
             }
         }
         datosEncontrados.forEach(arr -> modeloInfo.addRow(new String[]{arr[0], arr[1].substring(0,Math.min(100, arr[1].length()))}));
